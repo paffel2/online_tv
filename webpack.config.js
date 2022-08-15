@@ -46,13 +46,13 @@ module.exports = {
                 test: /\.(png|svg)$/,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'assets/img/[name].[ext]',}
+                    filename: 'assets/img/[name][ext]',}
             },
             {
                 test: /\.(ttf)$/,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'assets/fonts/[name].[ext]',}
+                    filename: 'assets/fonts/[name][ext]',}
             },
                     
             
