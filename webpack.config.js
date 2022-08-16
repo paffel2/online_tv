@@ -21,7 +21,7 @@ module.exports = {
         alias: {
           Images: path.join(__dirname, 'src/assets/images/'),
           Styles: path.join(__dirname,'src/styles/'),
-          Fonts: path.join(__dirname,'src/assets/fonts/')
+          Fonts: path.join(__dirname,'src/assets/fonts/'),
         }},
     plugins:[
         new PugPlugin({
@@ -54,7 +54,7 @@ module.exports = {
                 generator: {
                     filename: 'assets/fonts/[name][ext]',}
             },
-                    
+                   
             
         ]
     }

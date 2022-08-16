@@ -1,7 +1,5 @@
-@font-face {
-    font-family: 'Mulish Bold', sans-serif;
-    src: url('Fonts/Mulish-Bold.ttf') format('truetype'); 
-}
+@import 'fonts'; 
+
 @import 'shared';
 //font-family: 'Marcellus', serif;
 //font-family: 'Mulish', sans-serif;
@@ -12,10 +10,14 @@
     list-style: none;
     padding-left: 0;
     font-family: 'Mulish Bold', sans-serif;
-    &-item { margin: 0 1.5rem}
+    &-item { margin: 0 2.5rem}
     &-link { text-decoration: none;
              font-weight: 700;
              color: rgba($color: white, $alpha: 0.5);
+             transition: 0.2s ease color;
+             &:hover {
+                color: rgba($color: white, $alpha: 1);
+             }
              &::after {
                 content: '';
                 opacity: 0;
