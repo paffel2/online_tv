@@ -4,14 +4,12 @@
 .banner{
     max-width: 562px;
     padding-top: 122px;
-    padding-bottom: 203px;
+    padding-bottom: 160px;
     background-color: black;
     box-shadow: 100px 0px 100px black;
     &_text {
         color: #c2c2c2;
-        font-size: 18px;
-        line-height: 16px;
-        font-family: 'Mulish Regular', sans-serif; ;
+        font-family: 'Mulish Regular', sans-serif;
         }
     &_title { 
         font-family: 'Marcellus', sans-serif;
@@ -22,7 +20,7 @@
     &-info {
         font-weight: 800;
         font-family: 'Mulish ExtraBold', sans-serif;
-        margin-bottom: 29px;
+        font-size: 18px;
         &_year {
             margin-right: 18px;
         }
@@ -75,17 +73,22 @@
             font-family: 'Mulish ExtraBold', sans-serif;
             font-weight: 800;
             font-size: 16px;
+            border-radius: 100px;
+
         }
         &_btn-watch {
             background: $bg-gradient-safe;
             background: $bg-gradient;
-            border-radius: 50px;
             color: white;
             border-radius: 100px;
             position: relative;
             padding-left: 60px;
             margin-right: 30px;
             box-shadow: 0px 4px 50px rgba($bg-gradient-safe, 0.5);
+            transition: .2s ease box-shadow;
+            &:hover {
+                box-shadow: 0px 0px 0px rgba($bg-gradient-safe, 0.5);
+            }
 
             &::after {
                 content: '';
@@ -102,10 +105,13 @@
             }
             }
         &_btn-information {
-            border-radius: 100px;
             background-color: white;
             color: #323232;
+            transition: .2s ease background-color;
+            &:hover {
+                color: white;
+                background-color:transparent;
             }
+        }
     }
 }
-
