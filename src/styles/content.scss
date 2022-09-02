@@ -1,13 +1,31 @@
 @import 'fonts';
 @import 'shared';
 
-.section { 
+.section {
+    &_btn { 
+        font-family: "Mulish Bold", sans-serif;
+        color: white;
+        background: $bg-gradient-safe;
+        background: $bg-gradient;
+        border-radius: 100px;
+        border: none;
+        font-weight: 800;
+        font-size: 16px;
+        padding: 15px 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0px 4px 50px rgba($bg-gradient-safe, 0.5);
+        transition: .2s ease box-shadow;
+        &:hover {
+                box-shadow: 0px 0px 0px rgba($bg-gradient-safe, 0.5);
+            }
+        } 
     &_h2 { 
         font-size: 28px;
         line-height: 20px;
         position: relative;
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 25px;
         display: inline-block;
         &::before {
             content: '';
@@ -44,6 +62,8 @@
 .movies { 
     display: flex;
     align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
     justify-content: space-between;
     &_item {
         transition: .3s ease box-shadow;
@@ -69,3 +89,176 @@
         object-fit: cover;
     }
         }
+.genres { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 21px;
+    &_item {
+        flex: 0 0 23.7%;
+        border-radius: 20px;
+        padding: 48px 10px 38px;
+        box-sizing: border-box;
+        margin-bottom: 27px;
+        &-romance{
+            background: linear-gradient(109.31deg, #FD093F 2.4%, #F389F1 100%);
+        }
+        &-drama{
+            background: linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%);
+        }
+        &-historical{
+            background: linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%);
+        }
+        &-action{
+            background: linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
+        }
+        &-scifi{
+            background: linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%);
+        }
+        &-horror{
+            background: linear-gradient(109.31deg, #13547A 2.37%, #80D0C7 96.77%);
+        }
+        &-comedy{
+            background: linear-gradient(109.31deg, #FFF77B 2.37%, #FFBF42 50%);
+        }
+        &-documentary{
+            background: linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
+        }
+    }
+    &_title {
+        font-family:"Mulish Bold", sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        margin: 2px 0 0 0;
+    }
+    &_icon{
+        height: 80px;
+        position: relative;
+        overflow: hidden;
+    }
+    &_img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+        }
+
+.actors { 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 21px;
+            &_name{
+                font-family:"Mulish Bold", sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+            
+            }
+            &_item {
+                flex: 0 0 14%;
+            }
+            &-link{
+                overflow: hidden;   
+                position: relative;
+                width: 190px;
+                height: 190px;
+                display: block;
+                border-radius: 100%;
+            }
+            &_img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 190px;
+                height: 190px;
+                transform: translate(-50%, -50%);
+                object-fit: cover;
+            }
+}
+
+.marketing { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 21px;
+    &_name{
+        font-family:"Mulish Bold", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+    
+    }
+    &_item {
+        flex: 0 0 50%;
+        border-radius: 20px;
+        &:first-child{
+            .marketing-link {
+                border-radius: 20px 0 0 20px;
+            }
+        }
+        &:last-child{
+            .marketing-link {
+                border-radius: 0 20px 20px 0;
+            }
+        }
+    }
+    &-link{
+        overflow: hidden;   
+        position: relative;
+        width: 100%;
+        height: 341px;
+        display: block;
+    }
+    &_img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+}
+
+.offer {
+    max-width: 1224px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("Images/offer-bg.png");
+    padding: 72px 147px 72px 57px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+    margin-bottom: 121px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    &_title {
+        font-family:"Mulish Bold", sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        max-width: 800px;
+        margin: 0;
+        line-height: 1;
+    }
+    &_btn { 
+        font-family: "Mulish Bold", sans-serif;
+        color: white;
+        background: $bg-gradient-safe;
+        background: $bg-gradient;
+        border-radius: 100px;
+        border: none;
+        font-weight: 800;
+        font-size: 16px;
+        padding: 15px 30px;
+        box-shadow: 0px 4px 50px rgba($bg-gradient-safe, 0.5);
+        transition: .2s ease box-shadow;
+        &:hover {
+                box-shadow: 0px 0px 0px rgba($bg-gradient-safe, 0.5);
+            }
+        } 
+}
