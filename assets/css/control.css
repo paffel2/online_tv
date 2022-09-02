@@ -1,1 +1,31 @@
-.control{display:flex;align-items:center;list-style:none;padding-left:0}.control-item{margin-left:75px}.control-btn{background-color:rgba(0,0,0,0);border:none;display:block;background-size:cover;background-repeat:no-repeat}.control-btn_search{background-image:url(../img/search.svg);width:18px;height:18px}.control-btn_notice{background-image:url(../img/notice.svg);width:21.3px;height:23.5px}.control-btn_account{background-image:url(../img/account.svg);width:18px;height:19px}
+.control {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+.control-item {
+  margin-left: 75px;
+}
+.control-btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.control-btn_search {
+  background-image: url(../img/search.svg);
+  width: 18px;
+  height: 18px;
+}
+.control-btn_notice {
+  background-image: url(../img/notice.svg);
+  width: 21.3px;
+  height: 23.5px;
+}
+.control-btn_account {
+  background-image: url(../img/account.svg);
+  width: 18px;
+  height: 19px;
+}

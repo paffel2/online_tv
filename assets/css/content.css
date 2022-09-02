@@ -1,1 +1,271 @@
-@font-face{font-family:"Mulish ExtraBold";src:url(../fonts/Mulish-ExtraBold.ttf) format("truetype")}@font-face{font-family:"Mulish Bold";src:url(../fonts/Mulish-Bold.ttf) format("truetype")}@font-face{font-family:"Marcellus";src:url(../fonts/Marcellus-Regular.ttf) format("truetype")}@font-face{font-family:"Mulish Regular";src:url(../fonts/Mulish-Regular.ttf) format("truetype")}.section_btn{font-family:"Mulish Bold",sans-serif;color:#fff;background:#326cff;background:linear-gradient(131deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);border-radius:100px;border:none;font-weight:800;font-size:16px;padding:15px 30px;margin-top:15px;margin-bottom:15px;box-shadow:0px 4px 50px rgba(50,108,255,.5);transition:.2s ease box-shadow}.section_btn:hover{box-shadow:0px 0px 0px rgba(50,108,255,.5)}.section_h2{font-size:28px;line-height:20px;position:relative;padding-left:20px;padding-right:25px;display:inline-block}.section_h2::before{content:"";display:block;width:8px;height:35px;border-radius:50px;background:#326cff;background:linear-gradient(131deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);position:absolute;left:0;top:calc(50% - 17px)}.section_h2::after{content:"";display:block;width:9px;height:15.5px;background-image:url(../img/title-arrow.svg);background-repeat:no-repeat;background-size:cover;position:absolute;right:0;top:calc(50% - 7px)}.section_h2-link{color:#fff;text-decoration:none;font-family:"Mulish Bold",sans-serif;font-weight:700}.movies{display:flex;align-items:center;margin-top:15px;margin-bottom:15px;justify-content:space-between}.movies_item{transition:.3s ease box-shadow;box-shadow:0px 0px 20px rgba(44,176,249,0);border-radius:20px;flex:0 0 14%}.movies_item:hover{box-shadow:0px 0px 20px rgba(44,176,249,.5)}.movies-link{overflow:hidden;position:relative;width:100%;height:309px;display:block}.movies_img{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);object-fit:cover}.genres{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;text-align:center;margin-top:21px}.genres_item{flex:0 0 23.7%;border-radius:20px;padding:48px 10px 38px;box-sizing:border-box;margin-bottom:27px}.genres_item-romance{background:linear-gradient(109.31deg, #FD093F 2.4%, #F389F1 100%)}.genres_item-drama{background:linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%)}.genres_item-historical{background:linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%)}.genres_item-action{background:linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%)}.genres_item-scifi{background:linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%)}.genres_item-horror{background:linear-gradient(109.31deg, #13547A 2.37%, #80D0C7 96.77%)}.genres_item-comedy{background:linear-gradient(109.31deg, #FFF77B 2.37%, #FFBF42 50%)}.genres_item-documentary{background:linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%)}.genres_title{font-family:"Mulish Bold",sans-serif;font-size:28px;font-weight:700;margin:2px 0 0 0}.genres_icon{height:80px;position:relative;overflow:hidden}.genres_img{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);object-fit:cover}.actors{display:flex;align-items:center;justify-content:space-between;text-align:center;margin-top:21px}.actors_name{font-family:"Mulish Bold",sans-serif;font-size:18px;font-weight:700}.actors_item{flex:0 0 14%}.actors-link{overflow:hidden;position:relative;width:190px;height:190px;display:block;border-radius:100%}.actors_img{position:absolute;left:50%;top:50%;width:190px;height:190px;transform:translate(-50%, -50%);object-fit:cover}.marketing{display:flex;align-items:center;justify-content:space-between;text-align:center;margin-top:21px}.marketing_name{font-family:"Mulish Bold",sans-serif;font-size:18px;font-weight:700}.marketing_item{flex:0 0 50%;border-radius:20px}.marketing_item:first-child .marketing-link{border-radius:20px 0 0 20px}.marketing_item:last-child .marketing-link{border-radius:0 20px 20px 0}.marketing-link{overflow:hidden;position:relative;width:100%;height:341px;display:block}.marketing_img{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);object-fit:cover}.offer{max-width:1224px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;background-image:url(../img/offer-bg.png);padding:72px 147px 72px 57px;background-repeat:no-repeat;background-size:cover;margin-top:70px;margin-bottom:121px;border-radius:20px;box-sizing:border-box}.offer_title{font-family:"Mulish Bold",sans-serif;font-size:64px;font-weight:700;max-width:800px;margin:0;line-height:1}.offer_btn{font-family:"Mulish Bold",sans-serif;color:#fff;background:#326cff;background:linear-gradient(131deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);border-radius:100px;border:none;font-weight:800;font-size:16px;padding:15px 30px;box-shadow:0px 4px 50px rgba(50,108,255,.5);transition:.2s ease box-shadow}.offer_btn:hover{box-shadow:0px 0px 0px rgba(50,108,255,.5)}
+@font-face {
+  font-family: "Mulish ExtraBold";
+  src: url(../fonts/Mulish-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Mulish Bold";
+  src: url(../fonts/Mulish-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Marcellus";
+  src: url(../fonts/Marcellus-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Mulish Regular";
+  src: url(../fonts/Mulish-Regular.ttf) format("truetype");
+}
+.section_btn {
+  font-family: "Mulish Bold", sans-serif;
+  color: white;
+  background: rgb(50, 108, 255);
+  background: linear-gradient(131deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);
+  border-radius: 100px;
+  border: none;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 15px 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+  transition: 0.2s ease box-shadow;
+}
+.section_btn:hover {
+  box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
+}
+.section_h2 {
+  font-size: 28px;
+  line-height: 20px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 25px;
+  display: inline-block;
+}
+.section_h2::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 35px;
+  border-radius: 50px;
+  background: rgb(50, 108, 255);
+  background: linear-gradient(131deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);
+  position: absolute;
+  left: 0;
+  top: calc(50% - 17px);
+}
+.section_h2::after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 15.5px;
+  background-image: url(../img/title-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 7px);
+}
+.section_h2-link {
+  color: white;
+  text-decoration: none;
+  font-family: "Mulish Bold", sans-serif;
+  font-weight: 700;
+}
+
+.movies {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+.movies_item {
+  transition: 0.3s ease box-shadow;
+  box-shadow: 0px 0px 20px rgba(44, 176, 249, 0);
+  border-radius: 20px;
+  flex: 0 0 14%;
+}
+.movies_item:hover {
+  box-shadow: 0px 0px 20px rgba(44, 176, 249, 0.5);
+}
+.movies-link {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 309px;
+  display: block;
+}
+.movies_img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.genres {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 21px;
+}
+.genres_item {
+  flex: 0 0 23.7%;
+  border-radius: 20px;
+  padding: 48px 10px 38px;
+  box-sizing: border-box;
+  margin-bottom: 27px;
+}
+.genres_item-romance {
+  background: linear-gradient(109.31deg, #FD093F 2.4%, #F389F1 100%);
+}
+.genres_item-drama {
+  background: linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%);
+}
+.genres_item-historical {
+  background: linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%);
+}
+.genres_item-action {
+  background: linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
+}
+.genres_item-scifi {
+  background: linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%);
+}
+.genres_item-horror {
+  background: linear-gradient(109.31deg, #13547A 2.37%, #80D0C7 96.77%);
+}
+.genres_item-comedy {
+  background: linear-gradient(109.31deg, #FFF77B 2.37%, #FFBF42 50%);
+}
+.genres_item-documentary {
+  background: linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
+}
+.genres_title {
+  font-family: "Mulish Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 2px 0 0 0;
+}
+.genres_icon {
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.genres_img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.actors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 21px;
+}
+.actors_name {
+  font-family: "Mulish Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.actors_item {
+  flex: 0 0 14%;
+}
+.actors-link {
+  overflow: hidden;
+  position: relative;
+  width: 190px;
+  height: 190px;
+  display: block;
+  border-radius: 100%;
+}
+.actors_img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 190px;
+  height: 190px;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.marketing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 21px;
+}
+.marketing_name {
+  font-family: "Mulish Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.marketing_item {
+  flex: 0 0 50%;
+  border-radius: 20px;
+}
+.marketing_item:first-child .marketing-link {
+  border-radius: 20px 0 0 20px;
+}
+.marketing_item:last-child .marketing-link {
+  border-radius: 0 20px 20px 0;
+}
+.marketing-link {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 341px;
+  display: block;
+}
+.marketing_img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.offer {
+  max-width: 1224px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../img/offer-bg.png);
+  padding: 72px 147px 72px 57px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 70px;
+  margin-bottom: 121px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.offer_title {
+  font-family: "Mulish Bold", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  max-width: 800px;
+  margin: 0;
+  line-height: 1;
+}
+.offer_btn {
+  font-family: "Mulish Bold", sans-serif;
+  color: white;
+  background: rgb(50, 108, 255);
+  background: linear-gradient(131deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);
+  border-radius: 100px;
+  border: none;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 15px 30px;
+  box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+  transition: 0.2s ease box-shadow;
+}
+.offer_btn:hover {
+  box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
+}
