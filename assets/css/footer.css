@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Mulish ExtraBold";
+  src: url(../fonts/Mulish-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Mulish Bold";
+  src: url(../fonts/Mulish-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Marcellus";
+  src: url(../fonts/Marcellus-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Mulish Regular";
+  src: url(../fonts/Mulish-Regular.ttf) format("truetype");
+}
+footer {
+  background-color: #101012;
+  padding: 70px 0 50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer_list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.footer_list_link {
+  font-family: "Mulish Bold", sans-serif;
+  text-decoration: none;
+  color: #C2C2C2;
+  font-size: 18px;
+}
+.footer_list_item {
+  margin-bottom: 20px;
+}
